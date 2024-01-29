@@ -1,13 +1,4 @@
-<?php
-// Assuming the URL is http://www.example.com/abc/def
 
-// Get the full URL path (including the script name if it exists)
-$fullPath = $_SERVER['REQUEST_URI'];
-
-// If you want to remove the leading slash
-$path = ltrim($fullPath, '/');
-
-?>
 <html>
 <head>
 
@@ -19,7 +10,7 @@ $path = ltrim($fullPath, '/');
     .responsive-iframe { position: absolute; top: 0; left: 0; bottom: 0; right: 0; width: 100%; height: 100%; border: none;height:100%; }
 </style>
 <div class="container-iframe" data-widget="">
-    <iframe src="https://bgi-team.000webhostapp.com/<?php echo $path; ?>" class="responsive-iframe" frameborder="0" scrolling="no"></iframe>
+    <iframe src="https://bgi-team.000webhostapp.com/" class="responsive-iframe" frameborder="0" scrolling="no"></iframe>
 </div>
         </body>
         </html>
